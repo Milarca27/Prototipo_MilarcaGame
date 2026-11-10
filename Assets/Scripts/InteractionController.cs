@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
+using UnityEditor.Rendering;
 
 public class InteractionController : MonoBehaviour
 
@@ -9,6 +11,7 @@ public class InteractionController : MonoBehaviour
 
     [SerializeField] private InputActionReference interactAction;
     [SerializeField] private GameObject interactText;
+    [SerializeField] private TextMeshProUGUI dialogue;   
 
 
     private bool isPlayerInRange = false;
@@ -57,6 +60,10 @@ public class InteractionController : MonoBehaviour
             Debug.Log("Interaccion con objeto");
             interactText.SetActive(false);
             gameObject.SetActive(false);
+            if(gameObject.tag == "objt1")
+                dialogue.text = "jndskjfhdskjfh";
+            if (gameObject.tag == "objt2")
+                dialogue.text = "jndskjfhdskjfh";
 
         }
     }
