@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - objt1
+  - Cepillo
+  - Tinte
+  - Tijeras
   layers:
   - Default
   - TransparentFX
